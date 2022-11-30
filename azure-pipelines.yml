@@ -30,3 +30,9 @@ steps:
     repository: 'venkatmaredla / test'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+- task: CloudFoundry@1
+  inputs:
+    cfEndpoint: 'cflogin'
+    deploymentOptions: 'manifest'
+    createServices: false
+    bindServices: false
