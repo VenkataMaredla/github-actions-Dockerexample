@@ -30,6 +30,9 @@ steps:
     repository: 'venkatmaredla / test'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+- task: CloudFoundryCLIInstall@0
+  inputs:
+    cfVersion: '6.43.0'
 - task: CloudFoundry@1
   inputs:
     cfEndpoint: 'cflogin'
