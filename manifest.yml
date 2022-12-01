@@ -2,7 +2,7 @@
 applications:
 - name: java
   docker:
-    image: venkatmaredla/test
+    image: venkatmaredla/test:latest
   routes:
   - route: java.cloud.pcftest.com
   processes:
