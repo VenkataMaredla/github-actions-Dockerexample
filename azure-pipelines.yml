@@ -27,7 +27,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'dockerhublogin'
-    repository: 'venkatmaredla / test'
+    repository: 'convatecdevcg / emr'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: |
