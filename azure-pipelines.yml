@@ -22,11 +22,11 @@ steps:
     goals: 'package'
 - task: Docker@2
   inputs:
-    containerRegistry: 'dockerhublogin'
+    containerRegistry: 'hsdpdockerhublogin'
     command: 'login'
 - task: Docker@2
   inputs:
-    containerRegistry: 'dockerhublogin'
+    containerRegistry: 'hsdpdockerhublogin'
     repository: 'convatecdevcg / emr'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
