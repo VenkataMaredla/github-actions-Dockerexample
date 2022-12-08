@@ -2,7 +2,7 @@
 applications:
 - name: java
   docker:
-    image: docker.na1.hsdp.io/convatecdevcg/emr
+    image: docker.na1.hsdp.io/convatecdevcg/emr:latest
   routes:
   - route: java.cloud.pcftest.com
   processes:
